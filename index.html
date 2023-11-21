@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projek Latihan Dicoding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header class="nav-container">
+        <div class="logo">
+        Z<span style="color: rgb(0, 195, 255);">FR</span>
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#Fullstack">Fullstack</a></li>
+                <li><a href="#Frontend">Frontend</a></li>
+                <li><a href="#Backend">Backend</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+    <article>
+        <h2 id="Fullstack">FULLSTACK<hr></h2>
+        <img src="img/Fulstack.jpg" alt="FULLSTACK" width="700px">
+        <p>Full-Stack web developer adalah pengembang atau insinyur web yang bekerja di front-end dan back-end situs web atau aplikasi — artinya mereka dapat menangani proyek yang melibatkan basis data, membangun situs web yang menghadap pengguna, atau bahkan bekerja dengan klien selama tahap perencanaan proyek. Tugasnya mengembangkan aplikasi dan membuat aplikasi mudah serta nyaman digunakan. Lulusan informatika atau ilmu komputer tentu sangat familiar dengan profesi ini. Full stack developer adalah developer yang bekerja di dua sisi yaitu server side dan client side dari sebuah situs atau aplikasi.J </p>
+ 
+        <h2 id="Frontend">FRONTEND<hr></h2>
+        <img src="img/frontend.jpg" alt="FRONTEND" width="700px">
+        <p>frontend mengacu pada antarmuka pengguna grafis (GUI) yang dapat berinteraksi langsung dengan pengguna Anda, seperti menu navigasi, elemen desain, tombol, gambar, dan grafik. Secara teknis, halaman atau layar yang dilihat pengguna Anda dengan beberapa komponen UI disebut model objek dokumen (DOM). Front end developer bertanggung jawab mengimplementasikan desain dan konsep yang ada di web. Implementasi tersebut bisa dicapai menggunakan beberapa bahasa. Bahasa pemrograman yang digunakan untuk bagian front end developer adalah HTML, CSS, dan JavaScript.</p>
+
+        <h2 id="Backend">BACKEND<hr></h2>
+        <img src="img/backend-development.webp" alt="BACKEND" width="700px">
+        <p>Apa itu Bahasa Backend? Bahasa backend adalah bahasa yang digunakan Developer untuk memprogram sistem internal yang beroperasi di latar belakang aplikasi web apa pun. Bahasa pemrograman backend memiliki fitur khusus yang memudahkan proses komunikasi dengan server informasi.</p>
+    </article>
+    <aside>
+        <h1>Personal Data</h1>
+            <img src="img/Profile 2.jpg" alt="Gambar" class="profile">
+            <p>
+                Nama: Zahran Fairuz Rahman
+                Rombel: PPLG X-5<br>
+                Rayon: Cicurug 9<br>
+                Alamat: Kp.Cisalopa,RT 03/RW 07, Kec.Caringin, Kab.Bogor<br>
+                <button onClick="alert('Halo! Apa Kabar')">
+                    Click
+                  </button>
+                  <script>
+                    function increment() {
+                      document.getElementById('count').innerText++;
+                     
+                      if (document.getElementById('count').innerText == 7) {
+                        const hiddenMessage = document.createElement('h4');
+                        hiddenMessage.innerText = 'Selamat! Anda menemukan hadiah tersembunyi...';
+                        const image = document.createElement('img');
+                        image.setAttribute('src', 'https://i.ibb.co/0V49VRZ/catto.jpg');
+                        const contents = document.querySelector('.contents');
+                        contents.appendChild(hiddenMessage).appendChild(image);
+                      }
+                    }
+                   
+                    function welcome() {
+                      alert('Sim salabim muncullah elemen-elemen HTML!');
+                      const contents = document.querySelector('.contents');
+                      contents.removeAttribute('hidden');
+                    }
+                   
+                    document.getElementById('incrementButton').onclick = increment;
+                    document.body.onload = welcome;
+                  </script>
+            </p>
+    </aside>
+        </div>
+    </main>
+    <footer>
+        Contact By @zahranfairuzrahman@smkwikrama.sch.id
+    </footer>
+</body>
+</html>
